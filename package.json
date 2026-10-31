@@ -1,0 +1,41 @@
+{
+	"name": "amr-web-concept",
+	"version": "0.1.0",
+	"private": true,
+	"packageManager": "npm@11.6.2",
+	"dependencies": {
+		"@vinext/cloudflare": "latest",
+		"motion": "^14.9.0",
+		"nodemailer": "^10.3.1",
+		"react": "latest",
+		"react-dom": "latest",
+		"react-server-dom-webpack": "latest",
+		"three": "^0.170.0",
+		"vinext": "latest",
+		"zod": "^4.6.7"
+	},
+	"devDependencies": {
+		"@cloudflare/vite-plugin": "beta",
+		"@tailwindcss/postcss": "latest",
+		"@types/node": "latest",
+		"@types/nodemailer": "^8.0.2",
+		"@types/react": "latest",
+		"@types/react-dom": "latest",
+		"@types/three": "^0.170.0",
+		"@vitejs/plugin-react": "latest",
+		"@vitejs/plugin-rsc": "latest",
+		"cf": "^1.0.0-beta.26",
+		"tailwindcss": "latest",
+		"typescript": "latest",
+		"vite": "8.3.0"
+	},
+	"type": "module",
+	"scripts": {
+		"dev": "vite dev",
+		"build": "vite build",
+		"start": "vite preview",
+		"deploy": "vinext-cloudflare deploy",
+		"preview": "npm run build && npm run start --",
+		"cf-typegen": "cf workers types"
+	}
+}
